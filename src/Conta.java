@@ -3,8 +3,8 @@ import javax.swing.JOptionPane;
 public class Conta {
     
     public int numConta;
-    protected char tipo;
-    private char dono;
+    protected String tipo;
+    private String dono;
     private double saldo;
     private boolean status;
 
@@ -13,13 +13,13 @@ public class Conta {
         this.saldo = 0f;
         this.status = false;
     }
-    public void abrirConta(char tipo){
+    public void abrirConta(String string){
         this.status = true;
-        setTipo(tipo);
-        if ("CC".equals(tipo)) {
+        setTipo(string);
+        if ("CC".equals(string)) {
             saldo = 50f;
         }        
-        else if("CP".equals(tipo)){
+        else if("CP".equals(string)){
             saldo = 150f;
         }
 
@@ -76,16 +76,16 @@ public class Conta {
     public void setNumConta(int numConta) {
         this.numConta = numConta;
     }
-    public char getTipo() {
+    public String getTipo() {
         return tipo;
     }
-    public void setTipo(char tipo) {
-        this.tipo = tipo;
+    public void setTipo(String string) {
+        this.tipo = string;
     }
-    public char getDono() {
+    public String getDono() {
         return dono;
     }
-    public void setDono(char dono) {
+    public void setDono(String dono) {
         this.dono = dono;
     }
     public double getSaldo() {
@@ -101,6 +101,12 @@ public class Conta {
         this.status = status;
     }
 
+    public void estadoAtual(){
+        System.out.println(getNumConta());
+        System.out.println(getTipo());
+        System.out.println(getSaldo());
+        System.out.println(getDono());
+    }
     
 
 }
