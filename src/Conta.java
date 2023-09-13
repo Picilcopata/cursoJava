@@ -9,7 +9,7 @@ public class Conta {
     private boolean status;
 
 
-    public Conta(double saldo, boolean status) { //constructor
+    public Conta(double saldo, boolean status) { //constructor sei lá
         this.saldo = 0f;
         this.status = false;
     }
