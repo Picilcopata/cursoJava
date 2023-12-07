@@ -1,0 +1,6 @@
+- aplique os modificadores de acesso nos exercícios anteriores.
+
+x private
+x default
+x protected
+x public

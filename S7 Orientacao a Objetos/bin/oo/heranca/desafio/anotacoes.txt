@@ -1,0 +1,17 @@
+x   Carro
+Velocidade atual
+___
+Acelerar ++5
+Frear ++5 (Nâo pode ser menor que zero)
+
+
+x   Ferrari
+Acelera mais rápido
+ acelerar ++15
+
+x   Civic
+Acelera normal
+
+x   Classe de teste
+Instanciar uma ferrar e um civic, acelerar e frear e verificar se está correto.
+
